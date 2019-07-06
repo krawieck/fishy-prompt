@@ -6,7 +6,7 @@ function fish_prompt
     if [ $d = "~" ]
         printf "~ "
     else if [ $d = "/" ]
-        echo "/"
+        printf "/ "
     else
         echo $d
     end
