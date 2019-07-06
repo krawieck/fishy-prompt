@@ -2,7 +2,7 @@
 
 function fish_prompt
     set_color purple
-    set d (string replace $HOME "~" $PWD)
+    set -l d (string replace $HOME "~" $PWD)
     if [ $d = "~" ]
         printf "~ "
     else if [ $d = "/" ]
@@ -12,5 +12,4 @@ function fish_prompt
     end
     set_color green
     echo "➜ "
-    set -e d
 end

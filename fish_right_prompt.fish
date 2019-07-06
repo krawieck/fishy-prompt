@@ -1,7 +1,7 @@
 #!/usr/bin/env fish
 
 function fish_right_prompt
-    set s $status
+    set -l s $status
     if test $s -ne 0
         set_color red
         echo $s
