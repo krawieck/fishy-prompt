@@ -3,9 +3,9 @@
 function fish_prompt
     set_color purple
     set d (string replace $HOME "~" $PWD)
-    if [ $d = "~"]
+    if [ $d = "~" ]
         printf "~ "
-    else if [ $d = "/"]
+    else if [ $d = "/" ]
         echo "/"
     else
         echo $d
